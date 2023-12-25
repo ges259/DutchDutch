@@ -14,6 +14,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        
+        // 네비게이션 바 설정
+        let navigationBarAppearance = UINavigationBarAppearance()
+        navigationBarAppearance.backgroundColor = UIColor.base_Blue
+        
+        //
+        let navBar = UINavigationBar.appearance()
+        // 스크롤해도 네비게이션바의 색상이 달라지지 않음
+        navBar.standardAppearance = navigationBarAppearance
+        // 네비게이션 이미지의 색상을 검정색으로 변경
+        navBar.tintColor = UIColor.black
+        
         return true
     }
 
